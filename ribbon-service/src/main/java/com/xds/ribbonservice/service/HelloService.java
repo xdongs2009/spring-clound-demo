@@ -12,7 +12,8 @@ public class HelloService {
     private RestTemplate restTemplate;
 
     public String hiService(String name) {
-        return restTemplate.getForObject("http://HELLO-SERVICE/hi?name="+name,String.class);
+        String result =  restTemplate.getForObject("http://HELLO-SERVICE/hi?name="+name,String.class);
+        return result;
     }
 
 }

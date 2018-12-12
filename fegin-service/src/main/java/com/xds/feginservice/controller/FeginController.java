@@ -1,19 +1,19 @@
-package com.xds.ribbonservice.controller;
+package com.xds.feginservice.controller;
 
-import com.xds.ribbonservice.service.HelloService;
+import com.xds.feginservice.service.FeginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class FeginController {
 
     @Autowired
-    private HelloService helloService;
+    private FeginService feginService;
 
     @GetMapping(value = "/hi")
-    public String hi(@RequestParam String name) {
-        return helloService.hiService(name);
+    public String sayHi(@RequestParam String name) {
+        return feginService.sayHiFromClientOne(name);
     }
 }

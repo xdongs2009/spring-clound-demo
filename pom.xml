@@ -13,6 +13,7 @@
         <module>eureka-server</module>
         <module>hello-service</module>
         <module>ribbon-service</module>
+        <module>fegin-service</module>
     </modules>
 
     <parent>
