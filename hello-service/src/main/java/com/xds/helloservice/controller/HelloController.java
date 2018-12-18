@@ -11,8 +11,17 @@ public class HelloController {
     @Value("${server.port}")
     private String port;
 
+
+    @Value("${money}")
+    String money;
+
     @RequestMapping("/hi")
     public String home(@RequestParam(value = "name", defaultValue = "lucy") String name) {
         return "[hello-service]-hi " + name + " ,i am from port:" + port;
+    }
+
+    @RequestMapping("/money")
+    public String getMoney() {
+        return money + "left";
     }
 }

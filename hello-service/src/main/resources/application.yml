@@ -14,3 +14,8 @@ eureka:
 spring:
   application:
     name: hello-service
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: www.scdemo.com:8086

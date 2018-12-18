@@ -5,12 +5,12 @@ spring:
     config:
       server:
        git:
-         uri: https://github.com/xdongs2009/spring-clound-demo/config/
-         search-paths: respo
+         uri: https://github.com/xdongs2009/spring-clound-demo/
+         search-paths: config
          username:
          password:
       label: master
 server:
-  port:8086
+  port: 8086
 
 
