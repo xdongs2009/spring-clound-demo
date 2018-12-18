@@ -24,6 +24,6 @@ public class HelloController {
 
     @RequestMapping("/money")
     public String getMoney() {
-        return money + "left";
+        return "[hello-service]-" + money + "left";
     }
 }
