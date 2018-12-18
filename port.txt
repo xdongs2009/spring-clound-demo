@@ -1,0 +1,6 @@
+eureka  8080
+hello   8081    8082
+ribbon  8083
+fegin   8084
+zuul    8085
+config  8086

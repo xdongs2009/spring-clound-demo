@@ -15,11 +15,11 @@ public class HelloService {
     @HystrixCommand(fallbackMethod = "hiServiceFall")
     public String hiService(String name) {
         String result = restTemplate.getForObject("http://HELLO-SERVICE/hi?name=" + name, String.class);
-        return result;
+        return "[ribbon-service]-" + result;
     }
 
     public String hiServiceFall(String name) {
-        return "sorry," + name + ". hystrix";
+        return "[ribbon-service]-sorry," + name + ". hystrix";
     }
 
 }

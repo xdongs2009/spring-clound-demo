@@ -1,0 +1,27 @@
+server:
+  port: 8085
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+  client:
+    service-url:
+      defaultZone: http://www.scdemo.com:8080/eureka/
+  healthcheck:
+        enable: true
+
+spring:
+  application:
+    name: zuul-service
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: ribbon-service
+    api-b:
+      path: /api-b/**
+      serviceId: fegin-service
+
+

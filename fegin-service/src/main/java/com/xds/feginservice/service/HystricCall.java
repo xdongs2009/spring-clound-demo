@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 public class HystricCall implements FeginService {
     @Override
     public String sayHiFromClientOne(String name) {
-        return "sorry,"+name+", hystric.";
+        return "[fegin-service]-sorry,"+name+", hystric.";
     }
 }
