@@ -1,6 +1,19 @@
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+  client:
+    service-url:
+      defaultZone: http://www.scdemo.com:8080/eureka/
+    healthcheck:
+      enable: true
+
 spring:
   cloud:
     config:
       label: master
       profile: dev
       uri: http://www.scdemo.com:8086/
+      discovery:
+        enabled: true
+        service-id: config-server
