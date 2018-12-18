@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://www.scdemo.com:8086/
