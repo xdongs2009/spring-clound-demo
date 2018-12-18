@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8081
 
 eureka:
   instance:
@@ -14,8 +14,3 @@ eureka:
 spring:
   application:
     name: hello-service
-  cloud:
-    config:
-      label: master
-      profile: dev
-      uri: www.scdemo.com:8086
