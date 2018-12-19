@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-server
+  profiles: node2
+
+#集群配置
+server:
+  port: 8180
+eureka:
+  instance:
+    hostname: node2
+  client:
+    service-url:
+      default-zone: http://node1:8080/eureka
