@@ -14,16 +14,16 @@ public class HelloController {
     private String port;
 
 
-    @Value("${money}")
-    private String money;
+//    @Value("${money}")
+//    private String money;
 
     @RequestMapping("/hi")
     public String home(@RequestParam(value = "name", defaultValue = "lucy") String name) {
         return "[hello-service]-hi " + name + " ,i am from port:" + port;
     }
 
-    @RequestMapping("/money")
-    public String getMoney() {
-        return "[hello-service]-" + money + "left";
-    }
+//    @RequestMapping("/money")
+//    public String getMoney() {
+//        return "[hello-service]-" + money + "left";
+//    }
 }

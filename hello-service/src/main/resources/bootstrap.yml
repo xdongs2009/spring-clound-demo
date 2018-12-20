@@ -6,14 +6,15 @@ eureka:
     service-url:
       defaultZone: http://www.scdemo.com:8080/eureka/
     healthcheck:
-      enable: true
+      enabled: true
 
-spring:
-  cloud:
-    config:
-      label: master
-      profile: dev
-      uri: http://www.scdemo.com:8086/
-      discovery:
-        enabled: true
-        service-id: config-server
+
+#spring:
+#  cloud:
+#    config:
+#      label: master
+#      profile: dev
+#      uri: http://www.scdemo.com:8086/
+#      discovery:
+#        enabled: true
+#        service-id: config-server

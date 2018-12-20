@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
-
-	<groupId>com.xds</groupId>
-	<artifactId>fegin-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>fegin-service</name>
-	<description>Demo Fegin Service</description>
 
 	<parent>
 		<groupId>com.xds</groupId>
@@ -16,27 +8,38 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.xds</groupId>
+	<artifactId>zipkin-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>zipkin-service</name>
+	<description>Demo project for Zipkin Service</description>
+
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zipkin</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-server</artifactId>
+			<version>2.9.3</version>
+		</dependency>
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-ui</artifactId>
+			<version>2.9.3</version>
+		</dependency>
+
 	</dependencies>
 
 </project>

@@ -8,12 +8,18 @@ eureka:
   client:
     service-url:
       defaultZone: http://www.scdemo.com:8080/eureka/
-  healthcheck:
-        enable: true
+    healthcheck:
+      enabled: true
+
 
 spring:
   application:
     name: zuul-service
+  zipkin:
+    base-url: http://www.scdemo.com:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
 
 zuul:
   routes:

@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 9411
 
 eureka:
   instance:
@@ -11,11 +11,15 @@ eureka:
     healthcheck:
       enabled: true
 
+
+
 spring:
   application:
-    name: hello-service
-  zipkin:
-    base-url: http://www.scdemo.com:9411
-  sleuth:
-    sampler:
-       percentage: 1.0
+    name: zipkin-service
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+
