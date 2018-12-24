@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface FeginService {
 
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
-    String sayHiFromClientOne(@RequestParam(value = "name") String name);
+    String sayHiService(@RequestParam(value = "name") String name);
 }

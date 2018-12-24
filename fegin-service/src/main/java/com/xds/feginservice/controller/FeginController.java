@@ -14,7 +14,7 @@ public class FeginController {
 
     @GetMapping(value = "/hi")
     public String sayHi(@RequestParam String name) {
-        String result = feginService.sayHiFromClientOne(name);
+        String result = feginService.sayHiService(name);
         return "[fegin-service]" + result;
     }
 }
