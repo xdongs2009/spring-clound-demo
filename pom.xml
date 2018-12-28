@@ -17,6 +17,9 @@
         <module>zuul-service</module>
         <module>config-server</module>
         <module>zipkin-service</module>
+        <module>gateway-service</module>
+        <module>order-service</module>
+        <module>user-service</module>
     </modules>
 
     <parent>

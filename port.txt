@@ -4,6 +4,9 @@ ribbon  8083
 fegin   8084
 zuul    8085
 config  8086
+gateway 8087
+order   8088
+user    8089
 zipkin  9411
 
 #eureka集群 8080 8180

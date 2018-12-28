@@ -1,5 +1,5 @@
 server:
-  port:8080
+  port: 8080
 eureka:
   instance:
     hostname: www.scdemo.com
@@ -10,7 +10,7 @@ eureka:
       defaultZone: http://www.scdemo.com:8080/eureka/
   server:
     enable-self-preservation: false
-    eviction-interval-timer-in-ms: 30000
+    eviction-interval-timer-in-ms: 10000
 spring:
   application:
     name: eureka-server

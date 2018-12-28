@@ -11,4 +11,4 @@ eureka:
     hostname: node2
   client:
     service-url:
-      default-zone: http://node1:8080/eureka
+      default-zone: http://node1:8080/eureka/
